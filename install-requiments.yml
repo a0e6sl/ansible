@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+  - name: Package installation
+    apt:
+      name:
+        - python3
+        - systemd
+        - lvm2
+        - chrony
+      state: latest
+

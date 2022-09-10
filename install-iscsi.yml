@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: Package installation
+    apt:
+      name:
+        - open-iscsi
+      state: latest
+
